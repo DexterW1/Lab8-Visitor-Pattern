@@ -26,7 +26,6 @@ class Div: public Operate {
           		v->visit_div();
     		}
 		Iterator* create_iterator(){return new BinaryIterator(this);};
-
 };
 #endif //__Div_H__  
 

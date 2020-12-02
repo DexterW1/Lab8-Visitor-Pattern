@@ -27,6 +27,7 @@ class Op : public Base {
 		v->visit_op();
 	}
 	Iterator* create_iterator(){return new NullIterator(this);};
+
 };
 
 

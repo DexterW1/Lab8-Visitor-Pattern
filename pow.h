@@ -26,6 +26,5 @@ class Pow: public Operate {
             		v->visit_pow();
     		}
 		Iterator* create_iterator(){return new BinaryIterator(this);};
-
 };
 #endif //__POW_H__  
