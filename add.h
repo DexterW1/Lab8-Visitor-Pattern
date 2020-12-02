@@ -14,5 +14,10 @@ class Add: public Operate {
 		std::string stringify(){
 			return "(" + left->stringify() +")" + "+"+ "(" + right->stringify() + ")";
 		}
+		Base* get_left() {return left;};
+		Base* get_right(){return right;};
+		void accept(CountVisitor* v){
+			v->visit_add();
+		}
 };
 #endif //__Add_H__  
