@@ -25,7 +25,7 @@ class Div: public Operate {
     void accept(CountVisitor* v){
           v->visit_div();
     }
-		Iterator* create_iterator(){return new BinaryIterator(this)}
+		Iterator* create_iterator(){return new BinaryIterator(this);}
 
 };
 #endif //__Div_H__  
