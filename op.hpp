@@ -16,6 +16,15 @@ class Op : public Base {
         std::string stringify() {
 		    return std::to_string(val);
 	       }
+	Base* get_left(){
+		return nullptr;
+	}
+	Base* get_right(){
+		return nullptr;
+	}
+	void accept(CountVisitor* v){
+		v->visit_op();
+	}
 
 };
 
