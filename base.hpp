@@ -13,6 +13,7 @@ class Base {
         /* Pure Virtual Functions */
         virtual double evaluate() = 0;
         virtual std::string stringify() = 0;
+	virtual void accept(CountVisitor* v) = 0;
 };
 
 #endif //__BASE_HPP__
