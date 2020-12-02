@@ -19,6 +19,10 @@ class Div: public Operate {
 		std::string stringify(){
 			return "(" + left->stringify() +")" + "/"+ "(" + right->stringify() + ")";
 		}
+
+		Iterator* create_iterator(){return new BinaryIterator()}
+
+
 };
 #endif //__Div_H__  
 

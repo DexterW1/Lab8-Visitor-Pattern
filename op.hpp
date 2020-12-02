@@ -16,7 +16,7 @@ class Op : public Base {
         std::string stringify() {
 		    return std::to_string(val);
 	       }
-
+	Iterator* create_iterator(){return new NullIterator()}
 };
 
 

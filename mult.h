@@ -13,5 +13,6 @@ class Mult: public Operate {
 		std::string stringify(){
 			return "(" + left->stringify() +")" + "*"+ "(" + right->stringify() + ")";
 		}
+		Iterator* create_iterator(){return new BinaryIterator()}
 };
 #endif //__Mult_H__  
