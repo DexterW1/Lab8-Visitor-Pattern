@@ -20,7 +20,7 @@ class Pow: public Operate {
 		std::string stringify(){
 			return "(" + left->stringify() +")" + "^" +  "(" + right->stringify() + ")";
 		}
-		Iterator* create_iterator(){return new BinaryIterator()}
+		Iterator* create_iterator(){return new BinaryIterator(this)}
 
 		};
 #endif //__POW_H__  
