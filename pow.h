@@ -25,7 +25,7 @@ class Pow: public Operate {
     void accept(CountVisitor* v){
             v->visit_pow();
     }
-		Iterator* create_iterator(){return new BinaryIterator(this)}
+		Iterator* create_iterator(){return new BinaryIterator(this);}
 
 };
 #endif //__POW_H__  
