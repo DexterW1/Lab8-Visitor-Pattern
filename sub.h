@@ -13,5 +13,6 @@ class Sub: public Operate {
 		std::string stringify(){
 			return "(" + left->stringify() +")" + "-"+ "(" + right->stringify() + ")";
 		}
+		Iterator* create_iterator(){return new BinaryIterator(this)}
 };
 #endif //__SUB_H__  
