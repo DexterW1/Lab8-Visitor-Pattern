@@ -29,7 +29,7 @@ class Rand : public Base
 
                 }
 
-
+		Iterator* create_iterator(){return new NullIterator()}
 };
 
 #endif
