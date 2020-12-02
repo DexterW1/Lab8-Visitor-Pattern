@@ -20,7 +20,7 @@ class Div: public Operate {
 			return "(" + left->stringify() +")" + "/"+ "(" + right->stringify() + ")";
 		}
 
-		Iterator* create_iterator(){return new BinaryIterator()}
+		Iterator* create_iterator(){return new BinaryIterator(this)}
 
 
 };
