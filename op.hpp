@@ -16,6 +16,7 @@ class Op : public Base {
         std::string stringify() {
 		    return std::to_string(val);
 	       }
+
 	Base* get_left(){
 		return nullptr;
 	}
@@ -25,7 +26,7 @@ class Op : public Base {
 	void accept(CountVisitor* v){
 		v->visit_op();
 	}
-
+	Iterator* create_iterator(){return new NullIterator(this)}
 };
 
 
