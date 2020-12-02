@@ -26,7 +26,7 @@ class Op : public Base {
 	void accept(CountVisitor* v){
 		v->visit_op();
 	}
-	Iterator* create_iterator(){return new NullIterator(this)}
+	Iterator* create_iterator(){return new NullIterator(this);}
 };
 
 
