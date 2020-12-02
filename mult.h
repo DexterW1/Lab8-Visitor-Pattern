@@ -19,7 +19,7 @@ class Mult: public Operate {
             v->visit_mult();
      }
 
-		Iterator* create_iterator(){return new BinaryIterator(this)}
+		Iterator* create_iterator(){return new BinaryIterator(this);}
 
 };
 #endif //__Mult_H__  
