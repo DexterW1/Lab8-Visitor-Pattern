@@ -3,6 +3,9 @@
 
 #include <string>
 #include "iterator.hpp"
+#include "visitor.hpp"
+class Iterator;
+class CountVisitor;
 class Base {
     public:
         /* Constructors */

@@ -28,8 +28,11 @@ class Rand : public Base
                         return result;
 
                 }
+		void accept(CountVisitor* v){
+			v->visit_rand();
+		}
                 
-		      Iterator* create_iterator(){return new NullIterator(this)}
+		Iterator* create_iterator(){return new NullIterator(this)}
 };
 
 #endif
