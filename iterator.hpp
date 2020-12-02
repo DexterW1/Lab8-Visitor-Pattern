@@ -2,10 +2,12 @@
 #define __ITERATOR_HPP__
 
 #include <stack>
+#include "base.hpp"
 
+/*
 #include "../lab03/base.hpp"
 #include "../lab04/container.hpp"
-
+*/
 class Base;
 
 enum ChildIndicator { left, right, end };
