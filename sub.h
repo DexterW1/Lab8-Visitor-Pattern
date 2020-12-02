@@ -18,6 +18,6 @@ class Sub: public Operate {
     void accept(CountVisitor* v){
              v->visit_sub();
      }
-		Iterator* create_iterator(){return new BinaryIterator(this)}
+		Iterator* create_iterator(){return new BinaryIterator(this);}
 };
 #endif //__SUB_H__  
