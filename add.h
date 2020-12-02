@@ -20,7 +20,7 @@ class Add: public Operate {
 		void accept(CountVisitor* v){
 			v->visit_add();
 		}
-		Iterator* create_iterator(){return new BinaryIterator(this)}
+		Iterator* create_iterator(){return new BinaryIterator(this);};
 
 };
 #endif //__Add_H__  

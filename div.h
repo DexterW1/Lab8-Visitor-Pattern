@@ -20,12 +20,12 @@ class Div: public Operate {
 			return "(" + left->stringify() +")" + "/"+ "(" + right->stringify() + ")";
 		}
 
-    Base* get_left() {return left;};
-    Base* get_right(){return right;};
-    void accept(CountVisitor* v){
-          v->visit_div();
-    }
-		Iterator* create_iterator(){return new BinaryIterator(this)}
+    		Base* get_left() {return left;};
+    		Base* get_right(){return right;};
+    		void accept(CountVisitor* v){
+          		v->visit_div();
+    		}
+		Iterator* create_iterator(){return new BinaryIterator(this);};
 
 };
 #endif //__Div_H__  
