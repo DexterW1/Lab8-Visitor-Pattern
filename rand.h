@@ -28,7 +28,11 @@ class Rand : public Base
                         return result;
 
                 }
-                
+                virtual Base* get_left(){};
+		virtual Base* get_right(){};
+		void accept(CountVisitor* v){
+			return v->visit_rand();
+		}
 		Iterator* create_iterator(){return new NullIterator(this);};
 };
 
