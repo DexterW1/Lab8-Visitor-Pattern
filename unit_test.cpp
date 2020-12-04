@@ -11,10 +11,8 @@
 #include "visitor.hpp"
 #include "iterator.hpp"
 #include "iterator_tests.h"
+#include "sub_class_test.h"
 #include "preordertest.h"
-
-
-// #include "op_test.hpp"
 
 int main(int argc, char **argv) {
   ::testing::InitGoogleTest(&argc, argv);
